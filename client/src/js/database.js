@@ -16,7 +16,7 @@ export const putDb = async (content) => {
   console.log("Update the database");
 
   //Creates a connectioin to the database and version we want to use
-  const texDb = await openDB("jate", 1);
+  const textDb = await openDB("jate", 1);
 
   //Creates a new transaction and specify the database and data privileges
   const tx = textDb.transaction("jate", "readwrite");
